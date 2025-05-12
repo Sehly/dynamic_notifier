@@ -1,0 +1,20 @@
+{
+  "name": "sehly/dynamic_notifier",
+  "description": "Reusable dynamic notification system",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "DynamicNotifier\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "DynamicNotifier\\DynamicNotifierServiceProvider"
+      ],
+      "aliases": {
+        "Notifier": "DynamicNotifier\\Facades\\Notifier"
+      }
+    }
+  }
+}
